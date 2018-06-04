@@ -1,0 +1,14 @@
+#inspector_table{
+    position: relative;
+    top: 100px;
+    margin: auto;
+    width: 660px;
+    table-layout:fixed;
+}
+
+#inspector_table tr td{
+    text-align: center;
+    white-space:nowrap;
+    overflow:hidden;
+    word-break:keep-all;
+}

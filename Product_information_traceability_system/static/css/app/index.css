@@ -1,0 +1,208 @@
+#page2_jImages1{
+  left: 4px;
+  top: 1px;
+  height: 78px;
+  width: 78px;
+}
+
+#page2_jLabel1{
+  left: 91px;
+  top: 29px;
+  font-size: 18px;
+  font-family: "黑体";
+  line-height: 20px;
+}
+
+#page2_jImages2{
+  left: 757px;
+  top: 37px;
+  height: 313px;
+  width: 511px;
+}
+
+#page2_jLabel2{
+  left: 91px;
+  top: 56px;
+  font-family: "@Microsoft JhengHei";
+  font-weight: bold;
+  line-height: 14px;
+}
+
+#page2_jPanel1{
+  top: 0px;
+  height: 417px;
+  width: 100%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  background: #F8F8F8;
+}
+
+#page2_jButton1{
+  left: 1231px;
+  top: 25px;
+  width:16px;
+  height:20px;
+}
+
+#page2_jEdit1{
+  left: 1088px;
+  top: 22px;
+  width:126px;
+  height:23px;
+}
+
+#page2_jPanel3{
+  right: 0px;
+  top: 4px;
+  height: 51px;
+  width: 125px;
+  background: rgba(250,250,250,0);
+  border-color: rgba(250,250,250,0);
+}
+
+#page2_jLabel3{
+  left: 34px;
+  top: 16px;
+  font-size: 18px;
+  font-family: "黑体";
+  font-weight: bold;
+  color: #00C030;
+  line-height: 20px;
+  width: 59px;
+  text-align: right;
+}
+
+#page2_jPanel2{
+  top: -1px;
+  height: 484px;
+  width: 100%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#page2_jLabel4{
+  left: 191px;
+  top: 115px;
+  font-size: 30px;
+  font-family: "黑体";
+  color: #00C030;
+  line-height: 32px;
+}
+
+#page2_jMutiText1{
+  left: 192px;
+  top: 163px;
+  height: 190px;
+  width: 356px;
+  font-size: 14px;
+  font-family: "黑体";
+  color: #666666;
+}
+
+
+#page2_jImages3{
+  left: 97px;
+  top: 53px;
+  height: 250px;
+  width: 250px;
+}
+
+
+
+#page2_jImages4{
+  left: 488px;
+  top: 56px;
+  height: 250px;
+  width: 250px;
+}
+
+#page2_jLabel5{
+  left: 177px;
+  top: 317px;
+  font-size: 13px;
+  font-family: "黑体";
+  font-weight: bold;
+  color: #00C030;
+  line-height: 15px;
+  width: 103px;
+  text-align: center;
+}
+
+#page2_jLabel6{
+  left: 544px;
+  top: 319px;
+  font-size: 13px;
+  font-family: "黑体";
+  font-weight: bold;
+  color: #00C030;
+  line-height: 15px;
+  width: 138px;
+  text-align: center;
+}
+
+#page2_jLabel7{
+  left: 82px;
+  top: 346px;
+  font-size: 13px;
+  font-family: "黑体";
+  color: #00C030;
+  line-height: 15px;
+  width: 292px;
+  text-align: center;
+}
+
+#page2_jLabel8{
+  left: 497px;
+  top: 345px;
+  font-size: 13px;
+  font-family: "黑体";
+  color: #00C030;
+  line-height: 15px;
+  width: 229px;
+  text-align: center;
+}
+/*--------------------------------------------------------------------*/
+#no-product{
+    position: relative;
+    top: 100px;
+    left: 50px;
+    display: none;
+}
+#show-product{
+    position: relative;
+    top: 100px;
+    left: 0px;
+    width: 1600px;
+    height: 300px;
+}
+.product-div{
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 300px;
+    height: 300px;
+    /*background-color: #00eeFF;*/
+    text-align: center;
+}
+
+.image-div{
+    width: 250px;
+    height: 250px;
+    margin: auto;
+    /*background-color: #00C030;*/
+}
+
+.image-div img{
+    width: 250px;
+    height: 250px;
+}
+
+#logout-div{
+    display: none;
+}
+
+.title-div, .sub-div{
+  color: #00C000;
+}

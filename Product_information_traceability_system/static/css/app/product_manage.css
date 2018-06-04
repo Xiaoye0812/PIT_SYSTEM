@@ -1,0 +1,24 @@
+#product_table{
+    position: absolute;
+    top: 80px;
+    left: 60px;
+    margin: auto;
+    width: 950px;
+    table-layout:fixed;
+}
+#product_table tr td{
+    height: 50px;
+    text-align: center;
+    white-space:nowrap;
+    overflow:hidden;
+    word-break:keep-all;
+}
+
+.info-cont{
+    height: 50px;
+    width: 950px;
+}
+.info-cont td img{
+    width: 50px;
+    height: 50px;
+}

@@ -1,0 +1,499 @@
+{
+	"id": "7bba8f5c-aef6-4c5f-84fc-73fed8378fb4",
+	"name": "PIT_SYS",
+	"description": null,
+	"auth": null,
+	"events": null,
+	"variables": null,
+	"order": [
+		"5299ca15-7c89-4164-96bf-87a912b5c624",
+		"c77ff068-3740-4198-880c-745f3a4c906d",
+		"81bbe964-f98e-4f4e-b471-d2bc1854f0e7",
+		"cd1a6ed5-811b-4813-8718-c8878e66cbc8",
+		"4056d392-53c0-4312-975e-5a489717a70d",
+		"f5a0eef5-dbc7-4cce-baaa-ea1dca62b536",
+		"383313b7-17f4-4eec-b982-81c52d0fab3f",
+		"01daaab5-074b-4529-b6a1-5bd5fc48453a",
+		"7d7dbca2-8a5f-4729-809c-a39049b59ff8",
+		"96a2f797-85e7-442d-8e30-d76bf30086f7",
+		"68cdafc6-bd3b-49ef-9721-65c58cd3c255",
+		"5a962012-fb7b-4195-9b0e-e793a18cfa3c",
+		"a9e3cf9c-9520-43ef-a991-3b25c960afce",
+		"121cae92-c353-4502-ada7-c3d53c4157a1"
+	],
+	"folders_order": [],
+	"folders": [],
+	"requests": [
+		{
+			"id": "01daaab5-074b-4529-b6a1-5bd5fc48453a",
+			"name": "127.0.0.1:8122/product/batch/",
+			"url": "127.0.0.1:8122/product/batch/",
+			"description": "查看所有产品批次",
+			"data": null,
+			"dataMode": "params",
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "121cae92-c353-4502-ada7-c3d53c4157a1",
+			"name": "127.0.0.1:8122/product/submit/",
+			"url": "127.0.0.1:8122/product/submit/",
+			"description": "提交质检结果",
+			"data": [
+				{
+					"key": "product_id",
+					"value": "4",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "status",
+					"value": "1",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"headerData": [],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "383313b7-17f4-4eec-b982-81c52d0fab3f",
+			"name": "127.0.0.1:8122/user/delinspector/",
+			"url": "127.0.0.1:8122/user/delinspector/",
+			"description": "删除质检员",
+			"data": [
+				{
+					"key": "inspector_id",
+					"value": "103",
+					"description": "质检员编号",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"headerData": [],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "4056d392-53c0-4312-975e-5a489717a70d",
+			"name": "127.0.0.1:8122/user/addinspector/",
+			"url": "127.0.0.1:8122/user/addinspector/",
+			"description": "增加质检员",
+			"data": [
+				{
+					"key": "inspector_id",
+					"value": "103",
+					"description": "质检员编号",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "username",
+					"value": "inspector3",
+					"description": "质检员登录名",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "111111",
+					"description": "质检员密码",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "name",
+					"value": "质检员3",
+					"description": "质检员姓名",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"headerData": [],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "5299ca15-7c89-4164-96bf-87a912b5c624",
+			"name": "127.0.0.1:8122/user/login/",
+			"url": "127.0.0.1:8122/user/login/",
+			"description": "登录：管理员与质检员",
+			"data": [
+				{
+					"key": "username",
+					"value": "inspector1",
+					"description": "用户名：质检员与管理员",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "111111",
+					"description": "密码",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"headerData": [],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "5a962012-fb7b-4195-9b0e-e793a18cfa3c",
+			"name": "127.0.0.1:8122/product/changeproduct/",
+			"url": "127.0.0.1:8122/product/changeproduct/",
+			"description": "修改产品信息",
+			"data": [
+				{
+					"key": "product_id",
+					"value": "5",
+					"description": "产品编号",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "name",
+					"value": "产品5",
+					"description": "产品名称",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "desc",
+					"value": "5的描述",
+					"description": "产品描述",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "batch_id",
+					"value": "1003",
+					"description": "产品批次",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "inspector_id",
+					"value": "103",
+					"description": "质检员编号",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "product_image",
+					"value": "",
+					"description": "产品图片",
+					"type": "file",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/form-data",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"headers": "Content-Type: application/form-data\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "68cdafc6-bd3b-49ef-9721-65c58cd3c255",
+			"name": "127.0.0.1:8122/product/addproduct/",
+			"url": "127.0.0.1:8122/product/addproduct/",
+			"description": "增加产品",
+			"data": [
+				{
+					"key": "product_id",
+					"value": "5",
+					"description": "产品编号",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "name",
+					"value": "产品05",
+					"description": "产品名称",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "desc",
+					"value": "这是产品05的描述",
+					"description": "产品描述",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "batch_id",
+					"value": "1002",
+					"description": "产品批次",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "inspector_id",
+					"value": "101",
+					"description": "质检员编号",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "product_image",
+					"description": "产品图片",
+					"type": "file",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/form-data",
+					"description": ""
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"headers": "Content-Type: application/form-data\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "7d7dbca2-8a5f-4729-809c-a39049b59ff8",
+			"name": "127.0.0.1:8122/product/index/",
+			"url": "127.0.0.1:8122/product/index/",
+			"description": "主页案例产品",
+			"data": null,
+			"dataMode": "params",
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "81bbe964-f98e-4f4e-b471-d2bc1854f0e7",
+			"name": "127.0.0.1:8122/user/changepassword/",
+			"url": "127.0.0.1:8122/user/changepassword/",
+			"description": "修改密码：管理员",
+			"data": [
+				{
+					"key": "old_password",
+					"value": "654321",
+					"description": "旧密码",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "new_password",
+					"value": "123456",
+					"description": "新密码",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"headerData": [],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "96a2f797-85e7-442d-8e30-d76bf30086f7",
+			"name": "127.0.0.1:8122/product/product/",
+			"url": "127.0.0.1:8122/product/product/",
+			"description": "查看产品",
+			"data": [
+				{
+					"key": "product_info",
+					"value": "4",
+					"description": "商品搜索字段，可以为空，为空表示查看所有",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"headerData": [],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "a9e3cf9c-9520-43ef-a991-3b25c960afce",
+			"name": "127.0.0.1:8122/product/delproduct/",
+			"url": "127.0.0.1:8122/product/delproduct/",
+			"description": "删除产品",
+			"data": [
+				{
+					"key": "product_id",
+					"value": "1",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"headerData": [],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "c77ff068-3740-4198-880c-745f3a4c906d",
+			"name": "127.0.0.1:8122/user/logout/",
+			"url": "127.0.0.1:8122/user/logout/",
+			"description": "退出登录",
+			"data": null,
+			"dataMode": "params",
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "cd1a6ed5-811b-4813-8718-c8878e66cbc8",
+			"name": "127.0.0.1:8122/user/inspector/",
+			"url": "127.0.0.1:8122/user/inspector/",
+			"description": "查看质检员信息，查询字段为空表示查看所有",
+			"data": [
+				{
+					"key": "search_info",
+					"value": "1",
+					"description": "搜索字段，可以为空，表示查看所有",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"headerData": [],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "f5a0eef5-dbc7-4cce-baaa-ea1dca62b536",
+			"name": "127.0.0.1:8122/user/changeinspector/",
+			"url": "127.0.0.1:8122/user/changeinspector/",
+			"description": "修改质检员信息",
+			"data": [
+				{
+					"key": "inspector_id",
+					"value": "102",
+					"description": "质检员编号",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "username",
+					"value": "inspector02",
+					"description": "质检员登录名",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "222222",
+					"description": "质检员密码",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "name",
+					"value": "zjy2",
+					"description": "质检员姓名",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"headerData": [],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"headers": "",
+			"pathVariables": {}
+		}
+	]
+}
