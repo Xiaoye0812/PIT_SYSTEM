@@ -27,7 +27,7 @@ class Product(BaseModel, db.Model):
             'detection_time': self.detection_date,
             'create_time': self.create_time,
             'update_time': self.update_time,
-            'inspector': self.user.name,
+            'inspector': self.user.name if self.user else '未分配',
             'image': self.image
         }
 

@@ -7,19 +7,24 @@
 	"variables": null,
 	"order": [
 		"5299ca15-7c89-4164-96bf-87a912b5c624",
-		"c77ff068-3740-4198-880c-745f3a4c906d",
+		"603558f6-032b-4f37-862f-39dcb5964cbf",
 		"81bbe964-f98e-4f4e-b471-d2bc1854f0e7",
+		"c77ff068-3740-4198-880c-745f3a4c906d",
 		"cd1a6ed5-811b-4813-8718-c8878e66cbc8",
 		"4056d392-53c0-4312-975e-5a489717a70d",
+		"9567ebf6-2e19-46de-be88-90aff50eb7d1",
 		"f5a0eef5-dbc7-4cce-baaa-ea1dca62b536",
 		"383313b7-17f4-4eec-b982-81c52d0fab3f",
+		"93e07565-6f6f-4533-81b7-e5559a5b41db",
 		"01daaab5-074b-4529-b6a1-5bd5fc48453a",
-		"7d7dbca2-8a5f-4729-809c-a39049b59ff8",
 		"96a2f797-85e7-442d-8e30-d76bf30086f7",
+		"56f85acd-0200-41d9-9051-7038d8829301",
 		"68cdafc6-bd3b-49ef-9721-65c58cd3c255",
 		"5a962012-fb7b-4195-9b0e-e793a18cfa3c",
 		"a9e3cf9c-9520-43ef-a991-3b25c960afce",
-		"121cae92-c353-4502-ada7-c3d53c4157a1"
+		"121cae92-c353-4502-ada7-c3d53c4157a1",
+		"ab6237bd-3d13-418f-a83d-4acb0c48e5f6",
+		"23706625-bba6-4761-8f0e-01fa44385668"
 	],
 	"folders_order": [],
 	"folders": [],
@@ -65,6 +70,23 @@
 			"dataMode": "params",
 			"headerData": [],
 			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "23706625-bba6-4761-8f0e-01fa44385668",
+			"name": "127.0.0.1:8122/user/createmanager/",
+			"url": "127.0.0.1:8122/user/createmanager/",
+			"description": "创建管理员账号",
+			"data": null,
+			"dataMode": "params",
+			"headerData": [],
+			"method": "GET",
 			"pathVariableData": [],
 			"queryParams": [],
 			"auth": null,
@@ -152,15 +174,40 @@
 			"data": [
 				{
 					"key": "username",
-					"value": "inspector1",
+					"value": "admin",
 					"description": "用户名：质检员与管理员",
 					"type": "text",
 					"enabled": true
 				},
 				{
 					"key": "password",
-					"value": "111111",
+					"value": "123456",
 					"description": "密码",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"headerData": [],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "56f85acd-0200-41d9-9051-7038d8829301",
+			"name": "127.0.0.1:8122/product/productinfo/",
+			"url": "127.0.0.1:8122/product/productinfo/",
+			"description": "产品详情接口",
+			"data": [
+				{
+					"key": "product_id",
+					"value": "1",
+					"description": "产品编号",
 					"type": "text",
 					"enabled": true
 				}
@@ -244,6 +291,23 @@
 			"pathVariables": {}
 		},
 		{
+			"id": "603558f6-032b-4f37-862f-39dcb5964cbf",
+			"name": "127.0.0.1:8122/user/userinfo/",
+			"url": "127.0.0.1:8122/user/userinfo/",
+			"description": "获取当前用户信息",
+			"data": null,
+			"dataMode": "params",
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
 			"id": "68cdafc6-bd3b-49ef-9721-65c58cd3c255",
 			"name": "127.0.0.1:8122/product/addproduct/",
 			"url": "127.0.0.1:8122/product/addproduct/",
@@ -309,23 +373,6 @@
 			"pathVariables": {}
 		},
 		{
-			"id": "7d7dbca2-8a5f-4729-809c-a39049b59ff8",
-			"name": "127.0.0.1:8122/product/index/",
-			"url": "127.0.0.1:8122/product/index/",
-			"description": "主页案例产品",
-			"data": null,
-			"dataMode": "params",
-			"headerData": [],
-			"method": "GET",
-			"pathVariableData": [],
-			"queryParams": [],
-			"auth": null,
-			"events": [],
-			"folder": null,
-			"headers": "",
-			"pathVariables": {}
-		},
-		{
 			"id": "81bbe964-f98e-4f4e-b471-d2bc1854f0e7",
 			"name": "127.0.0.1:8122/user/changepassword/",
 			"url": "127.0.0.1:8122/user/changepassword/",
@@ -343,6 +390,48 @@
 					"value": "123456",
 					"description": "新密码",
 					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"headerData": [],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "93e07565-6f6f-4533-81b7-e5559a5b41db",
+			"name": "127.0.0.1:8122/product/index/",
+			"url": "127.0.0.1:8122/product/index/",
+			"description": "主页案例产品",
+			"data": null,
+			"dataMode": "params",
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "9567ebf6-2e19-46de-be88-90aff50eb7d1",
+			"name": "127.0.0.1:8122/user/upload/",
+			"url": "127.0.0.1:8122/user/upload/",
+			"description": "上传头像",
+			"data": [
+				{
+					"key": "avatar",
+					"value": "",
+					"description": "",
+					"type": "file",
 					"enabled": true
 				}
 			],
@@ -408,6 +497,23 @@
 			"pathVariables": {}
 		},
 		{
+			"id": "ab6237bd-3d13-418f-a83d-4acb0c48e5f6",
+			"name": "127.0.0.1:8122/user/createtable/",
+			"url": "127.0.0.1:8122/user/createtable/",
+			"description": "创建数据库表",
+			"data": null,
+			"dataMode": "params",
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
 			"id": "c77ff068-3740-4198-880c-745f3a4c906d",
 			"name": "127.0.0.1:8122/user/logout/",
 			"url": "127.0.0.1:8122/user/logout/",
@@ -432,7 +538,7 @@
 			"data": [
 				{
 					"key": "search_info",
-					"value": "1",
+					"value": "",
 					"description": "搜索字段，可以为空，表示查看所有",
 					"type": "text",
 					"enabled": true
@@ -457,21 +563,21 @@
 			"data": [
 				{
 					"key": "inspector_id",
-					"value": "102",
+					"value": "103",
 					"description": "质检员编号",
 					"type": "text",
 					"enabled": true
 				},
 				{
 					"key": "username",
-					"value": "inspector02",
+					"value": "inspector3",
 					"description": "质检员登录名",
 					"type": "text",
 					"enabled": true
 				},
 				{
 					"key": "password",
-					"value": "222222",
+					"value": "333333",
 					"description": "质检员密码",
 					"type": "text",
 					"enabled": true

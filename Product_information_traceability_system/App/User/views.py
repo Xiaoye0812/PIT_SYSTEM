@@ -5,7 +5,7 @@ from sqlalchemy import or_
 
 from utils import status_code
 from utils.settings import UPLOAD_DIRS
-from utils.functions import check_login
+from utils.functions import check_login, db
 from .models import User
 
 # 用户模块蓝图
@@ -295,27 +295,28 @@ def del_inspector():
         return jsonify(status_code.DATABASE_ERROR)
 
 
-# # 创建表接口
-# @user_blue.route('/createtable/')
-# def create_table():
-#
-#     db.create_all()
-#
-#     return '创建成功'
-#
-# # 创建管理员接口
-# @user_blue.route('/createmanager/')
-# def create_manager():
-#
-#     user = User()
-#
-#     user.username = 'admin'
-#     user.password = '123456'
-#     user.name = '管理员1号'
-#     user.user_type = 0
-#
-#     try:
-#         user.add_update()
-#         return '创建成功'
-#     except:
-#         return '创建失败'
+# 创建表接口
+@user_blue.route('/createtable/')
+def create_table():
+
+    db.create_all()
+
+    return '创建成功'
+
+
+# 创建管理员接口
+@user_blue.route('/createmanager/')
+def create_manager():
+
+    user = User()
+
+    user.username = 'admin'
+    user.password = '123456'
+    user.name = '管理员'
+    user.user_type = 0
+
+    try:
+        user.add_update()
+        return '创建成功'
+    except:
+        return '创建失败'
