@@ -47,10 +47,10 @@ def inspector_modify_page():
     return render_template('inspector_modify.html')
 
 
-@user_blue.route('/inspectorsearch/', methods=['GET'])
-@check_login
-def inspector_search_page():
-    return render_template('inspector_search.html')
+# @user_blue.route('/inspectorsearch/', methods=['GET'])
+# @check_login
+# def inspector_search_page():
+#     return render_template('inspector_search.html')
 
 
 """---------------------------------接口功能---------------------------------"""

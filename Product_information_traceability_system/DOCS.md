@@ -2,7 +2,7 @@
 
 #### 用户模块
 
-    - [登录](docs/user/login.md)
+    -[登录](docs/user/login.md)
         - [获取当前用户信息](docs/user/user_info.md)
         - [管理员修改密码](docs/user/change_password.md)
     - [退出登录](docs/user/logout.md)

@@ -361,4 +361,4 @@ def get_batch():
     for batch in batchs:
         batch_list.append(batch.to_dict())
 
-    return jsonify(code=status_code.SUCCESS['code'], batch_list=batch_list)
+    return jsonify(code=status_code.SUCCESS['code'], s=batch_list)
