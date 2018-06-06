@@ -132,7 +132,7 @@ def change_passwd():
 
 
 # 上传头像接口
-@user_blue.route('/upload/', methods=['GET'])
+@user_blue.route('/upload/', methods=['POST'])
 @check_login
 def upload():
 
